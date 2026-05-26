@@ -1,0 +1,25 @@
+/* ==========================================
+   Nexus Inn 自訂樣式與 Tailwind 顏色擴充
+   ========================================== */
+
+/* 透過 Tailwind 注入自訂的主題變數與顏色 */
+@theme {
+  --color-slate-950: #020617;
+}
+
+/* 自訂額外的平滑微調（讓深夜氛圍更立體） */
+.bg-gradient-to-r {
+  position: relative;
+  z-index: 1;
+}
+
+/* 針對輸入框與下拉選單的焦點陰影微調 */
+input:focus, select:focus {
+  box-shadow: 0 0 0 2px rgba(34, 211, 238, 0.2);
+}
+
+/* 炸物與食物發光動態陰影微調 */
+.group:hover {
+  transform: translateY(-2px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
