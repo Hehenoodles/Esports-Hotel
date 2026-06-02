@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Inn | 電競網咖旅館 - 屬於玩家的深夜避風港</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-extrabold tracking-wider text-cyan-400">
+                        NEXUS <span class="text-white">INN</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#features" class="text-slate-300 hover:text-cyan-400 transition-colors duration-300">頂級配備</a>
+                        <a href="#rooms" class="text-slate-300 hover:text-cyan-400 transition-colors duration-300">房型價格</a>
+                        <a href="#menu" class="text-slate-300 hover:text-cyan-400 transition-colors duration-300">深夜菜單</a>
+                        <a href="#about" class="text-slate-300 hover:text-cyan-400 transition-colors duration-300">關於我們</a>
+                        <a href="#faq" class="text-slate-300 hover:text-cyan-400 transition-colors duration-300">常見問題</a>
+                        <a href="#booking" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-5 py-2.5 rounded-lg transition-all duration-300 shadow-lg shadow-cyan-500/20">立即預約</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-slate-400 hover:text-cyan-400 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-4 space-y-3">
+            <a href="#features" class="block text-slate-300 hover:text-cyan-400 py-2">頂級配備</a>
+            <a href="#rooms" class="block text-slate-300 hover:text-cyan-400 py-2">房型價格</a>
+            <a href="#menu" class="block text-slate-300 hover:text-cyan-400 py-2">深夜菜單</a>
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 py-2">關於我們</a>
+            <a href="#faq" class="block text-slate-300 hover:text-cyan-400 py-2">常見問題</a>
+            <a href="#booking" class="block bg-cyan-500 text-slate-950 font-bold text-center py-2.5 rounded-lg">立即預約</a>
+        </div>
+    </nav>
+
+    <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=2070" class="w-full h-full object-cover opacity-25" alt="Gaming Background">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950 to-slate-950"></div>
+        </div>
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+        
+        <div class="relative max-w-5xl mx-auto px-4 text-center z-10">
+            <span class="inline-block text-cyan-400 font-semibold tracking-widest uppercase px-3 py-1 bg-cyan-500/10 rounded-full border border-cyan-500/20 mb-6">
+                <i class="fa-solid fa-moon mr-2"></i> 深夜限定的沉浸式玩家天堂
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white mb-6 leading-tight">
+                家裡沒電腦？出差想放鬆？<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">並肩作戰，累了就睡。</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                告別與戰友的遠距離語音。在這裡，你們能像電競選手般近距離溝通、並肩廝殺。頂級硬體與舒適床位，為在外奔波、渴望遊戲的你提供最狂熱的深夜避風港。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#rooms" class="w-full sm:w-auto bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-8 py-4 rounded-xl transition-all duration-300 shadow-xl shadow-cyan-500/20 text-lg">
+                    探索房型方案
+                </a>
+                <a href="#features" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-4 rounded-xl border border-slate-700 transition-all duration-300 text-lg">
+                    查看頂級硬體
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-slate-950 to-transparent"></div>
+    </header>
+
+    <hr class="border-slate-900 max-w-7xl mx-auto">
+
+    <section id="features" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">頂級電競戰裝</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">拒絕妥協的硬體規格，讓你感受毫秒級的流暢體驗，完美駕馭所有 3A 大作。</p>
+            </div>
+
+            <div class="bg-gradient-to-r from-slate-900 to-slate-900/60 border border-cyan-500/30 rounded-3xl mb-8 shadow-2xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 rounded-full blur-2xl group-hover:bg-cyan-500/10 transition-all duration-500"></div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 items-stretch">
+                    <div class="p-8 sm:p-12 flex flex-col justify-center">
+                        <span class="text-cyan-400 font-bold tracking-wider text-sm uppercase">Ultimate Performance</span>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">全台首引：NVIDIA GeForce RTX 5090</h3>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            搭載次世代架構的旗艦級顯示卡，支援全新光線追蹤與 AI 補幀技術。無論是《極限競速》、《黑神話》還是最激烈的 FPS 電競賽事，皆能以超越極限的畫質與極高幀率完美呈現。
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-slate-800 text-cyan-300 px-3 py-1 text-xs font-semibold rounded-md border border-slate-700">4K 全最高畫質</span>
+                            <span class="bg-slate-800 text-cyan-300 px-3 py-1 text-xs font-semibold rounded-md border border-slate-700">DLSS 4.0 支援</span>
+                            <span class="bg-slate-800 text-cyan-300 px-3 py-1 text-xs font-semibold rounded-md border border-slate-700">毫秒級極低延遲</span>
+                        </div>
+                    </div>
+                    <div class="h-64 lg:h-auto min-h-[320px] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" alt="GPU RTX 5090 Rig">
+                        <div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 right-6 bg-slate-950/80 backdrop-blur-sm border border-slate-800 px-4 py-2 rounded-xl">
+                            <span class="text-emerald-400 text-xs font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> 全房型保證標配</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-900/50 border border-slate-850 p-6 rounded-2xl hover:border-slate-700 transition-all duration-300">
+                    <div class="w-12 h-12 bg-cyan-500/10 flex items-center justify-center rounded-xl mb-4 text-cyan-400">
+                        <i class="fa-solid fa-cpu text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">旗艦級處理器</h4>
+                    <p class="text-slate-400 text-sm">最新世代高階多核心處理器，多工運作、實況開台依然流暢不卡頓。</p>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-850 p-6 rounded-2xl hover:border-slate-700 transition-all duration-300">
+                    <div class="w-12 h-12 bg-cyan-500/10 flex items-center justify-center rounded-xl mb-4 text-cyan-400">
+                        <i class="fa-solid fa-tv text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">360Hz 電競螢幕</h4>
+                    <p class="text-slate-400 text-sm">極致高更新率與 1ms 響應時間，精準捕捉敵人動態，助你一槍制敵。</p>
+                </div>
+                <div class="bg-slate-900/50 border border-slate-850 p-6 rounded-2xl hover:border-slate-700 transition-all duration-300">
+                    <div class="w-12 h-12 bg-cyan-500/10 flex items-center justify-center rounded-xl mb-4 text-cyan-400">
+                        <i class="fa-solid fa-keyboard text-xl"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-white mb-2">專業外設三件套</h4>
+                    <p class="text-slate-400 text-sm">配備頂級機械式鍵盤、輕量化電競滑鼠及高解析降噪耳機。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-slate-900 max-w-7xl mx-auto">
+
+    <section id="rooms" class="py-24 bg-slate-900/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">專屬戰艙與房型價格</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">不論是獨自出差想省錢放鬆，還是揪團開五排，我們都有最適合您的沉浸式空間。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="電競旅館單人房.png" class="w-full h-full object-cover" alt="單人極客戰艙">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Single Player</span>
+                                    <h3 class="text-xl font-bold text-white mt-1">單人極客戰艙</h3>
+                                </div>
+                                <span class="bg-slate-800 text-slate-400 px-2 py-1 rounded text-xs">出差背包首選</span>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-6">專為商務出差或獨行玩家設計。獨立隱私太空艙，配備頂級單人電競桌椅與微型舒適單人床。</p>
+                            <ul class="space-y-2 text-sm text-slate-300 mb-4">
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>標配 RTX 5090 電競電腦 x1</li>
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>人體工學單人舒適床鋪</li>
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>獨立式隔音個人空間</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-950 border-t border-slate-850 flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-black text-cyan-400">$880</span>
+                            <span class="text-xs text-slate-500"> / 12 小時</span>
+                        </div>
+                        <a href="#booking" class="bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-white font-medium px-4 py-2 rounded-lg text-sm transition-all duration-300">預訂</a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border-2 border-cyan-500 rounded-2xl overflow-hidden transform md:-translate-y-2 shadow-xl shadow-cyan-500/5 flex flex-col justify-between relative">
+                    <div class="absolute top-0 right-0 bg-cyan-500 text-slate-950 font-bold text-xs px-4 py-1 rounded-bl-xl tracking-wider uppercase z-10">
+                        雙人激推
+                    </div>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="電競旅館雙人房.png" class="w-full h-full object-cover" alt="雙人戰友套房">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400">Duo Squad</span>
+                                    <h3 class="text-xl font-bold text-white mt-1">雙人戰友套房</h3>
+                                </div>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-6">情侶約會、死黨出遊的最佳解。兩台頂級電腦並排，零距離戰術溝通，累了隨時躺下大字型休息。</p>
+                            <ul class="space-y-2 text-sm text-slate-300 mb-4">
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>標配 RTX 5090 電競電腦 x2</li>
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>標準雙人加大乳膠床墊</li>
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>獨立衛浴與高級降噪牆面</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-950 border-t border-slate-850 flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-black text-cyan-400">$1,580</span>
+                            <span class="text-xs text-slate-500"> / 12 小時</span>
+                        </div>
+                        <a href="#booking" class="bg-cyan-500 text-slate-950 font-bold px-4 py-2 rounded-lg text-sm hover:bg-cyan-400 transition-all duration-300">預訂</a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="電競旅館五人房.png" class="w-full h-full object-cover" alt="五人電競特訓房">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Full Team Room</span>
+                                    <h3 class="text-xl font-bold text-white mt-1">五人電競特訓房</h3>
+                                </div>
+                                <span class="bg-slate-800 text-slate-400 px-2 py-1 rounded text-xs">極致省錢首選</span>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-6">完美複製職業電競隊伍訓練室。五機並排，體驗最高規格的團隊配合與賽後檢術討論空間。</p>
+                            <ul class="space-y-2 text-sm text-slate-300 mb-4">
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>標配 RTX 5090 電競電腦 x5</li>
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>五張高規格獨立舒適單人床</li>
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>附設戰術白板與賽事討論桌</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-950 border-t border-slate-850 flex items-center justify-between">
+                        <div>
+                            <span class="text-2xl font-black text-cyan-400">$3,200</span>
+                            <span class="text-xs text-slate-500"> / 12 小時</span>
+                        </div>
+                        <a href="#booking" class="bg-slate-800 hover:bg-cyan-500 hover:text-slate-950 text-white font-medium px-4 py-2 rounded-lg text-sm transition-all duration-300">預訂</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-slate-900 max-w-7xl mx-auto">
+
+    <section id="menu" class="py-24 relative">
+        <div class="absolute top-1/2 right-1/4 w-72 h-72 bg-amber-500/5 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">深夜靈魂網咖美食菜單</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">深夜激戰怎能少了這味？現點現做美食，一鍵送達座位，暖胃更暖心。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-500/30 transition-all duration-300 group">
+                    <div>
+                        <div class="h-40 overflow-hidden">
+                            <img src="蔥燒牛肉麵.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="蔥燒牛肉麵">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="text-base font-bold text-white">皇室經典・蔥燒牛肉麵</h3>
+                                <span class="text-cyan-400 font-extrabold text-lg">$120</span>
+                            </div>
+                            <p class="text-slate-400 text-sm">網咖不敗傳奇！濃郁微辣的牛肉湯頭，軟Q麵條吸飽湯汁，深夜醒腦必備。</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <span class="inline-block bg-slate-800 text-amber-400 text-xs px-2 py-0.5 rounded font-medium">★ 主廚推薦加蛋加起司</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-500/30 transition-all duration-300 group">
+                    <div>
+                        <div class="h-40 overflow-hidden">
+                            <img src="肉骨茶麵.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="肉骨茶麵">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="text-base font-bold text-white">滋補醇香・肉骨茶麵</h3>
+                                <span class="text-cyan-400 font-extrabold text-lg">$110</span>
+                            </div>
+                            <p class="text-slate-400 text-sm">溫潤中藥與胡椒香氣完美交融，清爽不油膩，溫柔撫慰您激戰過後的疲憊身心。</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <span class="inline-block bg-slate-800 text-slate-400 text-xs px-2 py-0.5 rounded font-medium">湯頭清甜回甘</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-orange-500/30 transition-all duration-300 group">
+                    <div>
+                        <div class="h-40 overflow-hidden">
+                            <img src="炸物拼盤.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="炸物拼盤">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="text-base font-bold text-white">金黃大亂鬥・炸物拼盤</h3>
+                                <span class="text-cyan-400 font-extrabold text-lg">$150</span>
+                            </div>
+                            <p class="text-slate-400 text-sm">多口爽脆！內含美式脆薯、香酥雞塊與黃金洋蔥圈。絕對是揪團開排、與戰友共享的極致首選。</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <span class="inline-block bg-slate-800 text-orange-400 text-xs px-2 py-0.5 rounded font-medium">酥脆現炸・團隊共享</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-cyan-500/30 transition-all duration-300 group shadow-lg hover:shadow-cyan-500/5">
+                    <div>
+                        <div class="h-40 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="電競能量特調飲料">
+                        </div>
+                        <div class="p-5">
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="text-base font-bold text-white">藍調微光・電競能量特調</h3>
+                                <span class="text-cyan-400 font-extrabold text-lg">$80</span>
+                            </div>
+                            <p class="text-slate-400 text-sm">極限續航！獨家研發氣泡能量飲，完美比例冰涼爽口，一秒補滿戰鬥專注力，伴你通宵連勝。</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <span class="inline-block bg-slate-800 text-cyan-400 text-xs px-2 py-0.5 rounded font-medium"><i class="fa-solid fa-ice-cream mr-1"></i> 冰度固定・無限暢快</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 text-center text-xs text-slate-500">
+                <p><i class="fa-solid fa-bell mr-1 text-cyan-500"></i> 所有房型皆可透過電腦系統「一鍵下單」，專人直接端上您的電腦桌。</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-slate-900 max-w-7xl mx-auto">
+
+    <section id="about" class="py-24 bg-slate-900/10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-8">
+                「別再一個人遠距離用語音了，<br class="sm:hidden"> 像電競選手般並肩溝通吧！」
+            </h2>
+            <p class="text-slate-400 leading-relaxed max-w-3xl mx-auto text-base sm:text-lg mb-12">
+                我們深知線上語音總少了一份真實的激情。在這裡，我們打破距離的限制。你可以和死黨、隊友面對面坐在隔壁，看著對方的螢幕配合技能，體驗最純粹的線下網咖感動。出差旅遊想省住宿費、家裡沒配備、或是單純想在夜晚沉浸在虛擬世界中？Nexus Inn 是你最完美的歸屬，好玩、好睡、更好吃。
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
+                <div class="p-4 bg-slate-900/40 rounded-xl border border-slate-800">
+                    <div class="text-2xl font-black text-cyan-400 mb-1">24H</div>
+                    <div class="text-xs text-slate-400">全天候營業</div>
+                </div>
+                <div class="p-4 bg-slate-900/40 rounded-xl border border-slate-800">
+                    <div class="text-2xl font-black text-cyan-400 mb-1">100%</div>
+                    <div class="text-xs text-slate-400">獨立隔音太空艙</div>
+                </div>
+                <div class="p-4 bg-slate-900/40 rounded-xl border border-slate-800">
+                    <div class="text-2xl font-black text-cyan-400 mb-1">0 距離</div>
+                    <div class="text-xs text-slate-400">實體開團配合</div>
+                </div>
+                <div class="p-4 bg-slate-900/40 rounded-xl border border-slate-800">
+                    <div class="text-2xl font-black text-cyan-400 mb-1">Free</div>
+                    <div class="text-xs text-slate-400">高級衛浴盥洗</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-slate-900 max-w-7xl mx-auto">
+
+    <section id="faq" class="py-24 relative overflow-hidden">
+        <div class="absolute top-1/4 -left-32 w-80 h-80 bg-cyan-500/5 rounded-full blur-3xl"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">玩家常見問題</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">解決你入住前的所有技術性疑問，讓你放鬆享受今晚的連勝夜。</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="faq-item bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden transition-all duration-300">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center text-white font-semibold hover:text-cyan-400 transition-colors focus:outline-none">
+                        <span><i class="fa-solid fa-shower mr-3 text-cyan-500"></i>有提供淋浴間和盥洗用品嗎？官方適合出差過夜嗎？</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300 text-sm"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-950/40">
+                        <p class="p-6 text-slate-400 text-sm leading-relaxed border-t border-slate-850">
+                            有的！我們特別為出差與旅遊省錢的玩家設計。館內配有高級乾濕分離個人淋浴間，24小時熱水供應。每位留宿的玩家皆可免費獲得一份盥洗包（內含毛巾、牙刷、沐浴乳、洗髮精），讓您像住飯店一樣舒適。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden transition-all duration-300">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center text-white font-semibold hover:text-cyan-400 transition-colors focus:outline-none">
+                        <span><i class="fa-solid fa-suitcase mr-3 text-cyan-500"></i>入住可以中途離開或寄放大型行李嗎？</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300 text-sm"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-950/40">
+                        <p class="p-6 text-slate-400 text-sm leading-relaxed border-t border-slate-850">
+                            完全可以！在您的預訂時間內，您可以隨時進出旅館。櫃檯提供 24 小時免費行李寄放服務，不論是商務行李箱還是旅遊大背包，都可以安全託管。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden transition-all duration-300">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center text-white font-semibold hover:text-cyan-400 transition-colors focus:outline-none">
+                        <span><i class="fa-solid fa-clock mr-3 text-cyan-500"></i>房型價格有包含電腦使用費嗎？需要另外開台嗎？</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300 text-sm"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-950/40">
+                        <p class="p-6 text-slate-400 text-sm leading-relaxed border-t border-slate-850">
+                            費用已經全部包含囉！您支付的房型價格即為全包費用，包含房中使用 RTX 5090 的旗艦電腦硬體無限暢玩，以及衛浴盥洗。除了點餐外，絕對沒有任何隱藏的開台費用。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden transition-all duration-300">
+                    <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center text-white font-semibold hover:text-cyan-400 transition-colors focus:outline-none">
+                        <span><i class="fa-solid fa-user-shield mr-3 text-cyan-500"></i>未滿 18 歲可以在深夜時段留宿入住嗎？</span>
+                        <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300 text-sm"></i>
+                    </button>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-950/40">
+                        <p class="p-6 text-slate-400 text-sm leading-relaxed border-t border-slate-850">
+                            依據中華民國法規，未滿 18 歲之青少年，於每日深夜 22:00 至隔日早上 08:00 依法令規定無法單獨留宿或在館內逗留（除非有法定代理人全程陪同入住）。辦理入住時皆需出示身分證件以供查驗。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-md mx-auto px-4">
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold text-white">搶先保留您的深夜戰位</h3>
+                <p class="text-sm text-slate-400 mt-2">熱門時段機位有限，請填寫基本資料，我們將有專人與您確認。</p>
+            </div>
+            <form id="booking-form" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">聯絡姓名</label>
+                    <input type="text" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors" placeholder="請輸入姓名">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">預計抵達房型</label>
+                    <select class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                        <option>單人極客戰艙 ($880 / 12h)</option>
+                        <option selected>雙人戰友套房 ($1,580 / 12h)</option>
+                        <option>五人電競特訓房 ($3,200 / 12h)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">聯絡電話</label>
+                    <input type="tel" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors" placeholder="如：0912345678">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">預計入住日期</label>
+                    <input type="date" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors [color-scheme:dark]">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">預計抵達時間</label>
+                    <input type="time" required class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors [color-scheme:dark]">
+                </div>
+                <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold py-3.5 rounded-lg transition-all duration-300 text-center shadow-lg shadow-cyan-500/10 mt-2">
+                    送出預約申請
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-8 text-center text-sm text-slate-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="mb-2">NEXUS INN 電競網咖旅館 © 2026. All rights reserved.</p>
+            <p class="text-xs">本網站為主打深夜沉浸式高端電競宣傳之形象網頁</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="fixed bottom-6 right-6 z-40 bg-slate-900/80 backdrop-blur-md border border-cyan-500/30 hover:border-cyan-400 text-cyan-400 p-4 rounded-xl shadow-lg shadow-cyan-500/10 transition-all duration-300 opacity-0 translate-y-10 pointer-events-none hover:-translate-y-1">
+        <i class="fa-solid fa-arrow-up text-lg"></i>
+    </button>
+
+    <script>
+        // 手機版選單切換
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // FAQ 手風琴點擊展開/收合功能
+        const faqBtns = document.querySelectorAll('.faq-btn');
+        
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('.fa-chevron-down');
+                
+                const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+                
+                document.querySelectorAll('.faq-content').forEach(el => el.style.maxHeight = '0px');
+                document.querySelectorAll('.fa-chevron-down').forEach(el => el.style.transform = 'rotate(0deg)');
+                document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('border-cyan-500/40'));
+                
+                if (!isOpen) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.style.transform = 'rotate(180deg)';
+                    item.classList.add('border-cyan-500/40');
+                }
+            });
+        });
+
+        // 快速回到頂端按鈕的控制邏輯
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTopBtn.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+                backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+                backToTopBtn.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // 預約表單送出提示
+        const bookingForm = document.getElementById('booking-form');
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('感謝您的預約申請！專人將於 15 分鐘內與您確認機位與房型。祝您今晚連勝！');
+            bookingForm.reset();
+        });
+    </script>
+</body>
+</html>
