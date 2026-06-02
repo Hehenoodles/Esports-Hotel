@@ -49,6 +49,10 @@
     </nav>
 
     <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=2070" class="w-full h-full object-cover opacity-25" alt="Gaming Background">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950 to-slate-950"></div>
+        </div>
         <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
         
@@ -84,10 +88,10 @@
                 <p class="text-slate-400 max-w-xl mx-auto">拒絕妥協的硬體規格，讓你感受毫秒級的流暢體驗，完美駕馭所有 3A 大作。</p>
             </div>
 
-            <div class="bg-gradient-to-r from-slate-900 to-slate-900/60 border border-cyan-500/30 rounded-3xl p-8 sm:p-12 mb-8 shadow-2xl relative overflow-hidden group">
+            <div class="bg-gradient-to-r from-slate-900 to-slate-900/60 border border-cyan-500/30 rounded-3xl mb-8 shadow-2xl relative overflow-hidden group">
                 <div class="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 rounded-full blur-2xl group-hover:bg-cyan-500/10 transition-all duration-500"></div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                    <div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 items-stretch">
+                    <div class="p-8 sm:p-12 flex flex-col justify-center">
                         <span class="text-cyan-400 font-bold tracking-wider text-sm uppercase">Ultimate Performance</span>
                         <h3 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">全台首引：NVIDIA GeForce RTX 5090</h3>
                         <p class="text-slate-400 mb-6 leading-relaxed">
@@ -99,13 +103,11 @@
                             <span class="bg-slate-800 text-cyan-300 px-3 py-1 text-xs font-semibold rounded-md border border-slate-700">毫秒級極低延遲</span>
                         </div>
                     </div>
-                    <div class="bg-slate-950/60 p-6 rounded-2xl border border-slate-800 text-center relative">
-                        <i class="fa-solid fa-microchip text-7xl text-cyan-500/20 absolute top-4 right-4"></i>
-                        <div class="text-slate-500 text-xs tracking-widest uppercase mb-2">GPU Status</div>
-                        <div class="text-5xl font-black text-cyan-400 tracking-wider mb-2">RTX 5090</div>
-                        <div class="text-emerald-400 text-sm font-semibold mb-4"><i class="fa-solid fa-circle-check mr-1"></i> 全房型保證標配</div>
-                        <div class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
-                            <div class="bg-cyan-500 h-full w-full shadow-lg shadow-cyan-400"></div>
+                    <div class="h-64 lg:h-auto min-h-[320px] relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&q=80&w=1000" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" alt="GPU RTX 5090 Rig">
+                        <div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 right-6 bg-slate-950/80 backdrop-blur-sm border border-slate-800 px-4 py-2 rounded-xl">
+                            <span class="text-emerald-400 text-xs font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> 全房型保證標配</span>
                         </div>
                     </div>
                 </div>
@@ -148,20 +150,26 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Single Player</span>
-                                <h3 class="text-xl font-bold text-white mt-1">單人極客戰艙</h3>
-                            </div>
-                            <span class="bg-slate-800 text-slate-400 px-2 py-1 rounded text-xs">出差背包首選</span>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="電競旅館單人房.png" class="w-full h-full object-cover" alt="單人極客戰艙">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
                         </div>
-                        <p class="text-slate-400 text-sm mb-6">專為商務出差或獨行玩家設計。獨立隱私太空艙，配備頂級單人電競桌椅與微型舒適單人床。</p>
-                        <ul class="space-y-2 text-sm text-slate-300 mb-8">
-                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>標配 RTX 5090 電競電腦 x1</li>
-                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>人體工學單人舒適床鋪</li>
-                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>獨立式隔音個人空間</li>
-                        </ul>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Single Player</span>
+                                    <h3 class="text-xl font-bold text-white mt-1">單人極客戰艙</h3>
+                                </div>
+                                <span class="bg-slate-800 text-slate-400 px-2 py-1 rounded text-xs">出差背包首選</span>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-6">專為商務出差或獨行玩家設計。獨立隱私太空艙，配備頂級單人電競桌椅與微型舒適單人床。</p>
+                            <ul class="space-y-2 text-sm text-slate-300 mb-4">
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>標配 RTX 5090 電競電腦 x1</li>
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>人體工學單人舒適床鋪</li>
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>獨立式隔音個人空間</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="p-6 bg-slate-950 border-t border-slate-850 flex items-center justify-between">
                         <div>
@@ -173,22 +181,28 @@
                 </div>
 
                 <div class="bg-slate-900 border-2 border-cyan-500 rounded-2xl overflow-hidden transform md:-translate-y-2 shadow-xl shadow-cyan-500/5 flex flex-col justify-between relative">
-                    <div class="absolute top-0 right-0 bg-cyan-500 text-slate-950 font-bold text-xs px-4 py-1 rounded-bl-xl tracking-wider uppercase">
+                    <div class="absolute top-0 right-0 bg-cyan-500 text-slate-950 font-bold text-xs px-4 py-1 rounded-bl-xl tracking-wider uppercase z-10">
                         雙人激推
                     </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400">Duo Squad</span>
-                                <h3 class="text-xl font-bold text-white mt-1">雙人戰友套房</h3>
-                            </div>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="電競旅館雙人房.png" class="w-full h-full object-cover" alt="雙人戰友套房">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
                         </div>
-                        <p class="text-slate-400 text-sm mb-6">情侶約會、死黨出遊的最佳解。兩台頂級電腦並排，零距離戰術溝通，累了隨時躺下大字型休息。</p>
-                        <ul class="space-y-2 text-sm text-slate-300 mb-8">
-                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>標配 RTX 5090 電競電腦 x2</li>
-                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>標準雙人加大乳膠床墊</li>
-                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>獨立衛浴與高級降噪牆面</li>
-                        </ul>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400">Duo Squad</span>
+                                    <h3 class="text-xl font-bold text-white mt-1">雙人戰友套房</h3>
+                                </div>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-6">情侶約會、死黨出遊的最佳解。兩台頂級電腦並排，零距離戰術溝通，累了隨時躺下大字型休息。</p>
+                            <ul class="space-y-2 text-sm text-slate-300 mb-4">
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>標配 RTX 5090 電競電腦 x2</li>
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>標準雙人加大乳膠床墊</li>
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>獨立衛浴與高級降噪牆面</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="p-6 bg-slate-950 border-t border-slate-850 flex items-center justify-between">
                         <div>
@@ -200,20 +214,26 @@
                 </div>
 
                 <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between">
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Full Team Room</span>
-                                <h3 class="text-xl font-bold text-white mt-1">五人電競特訓房</h3>
-                            </div>
-                            <span class="bg-slate-800 text-slate-400 px-2 py-1 rounded text-xs">極致省錢首選</span>
+                    <div>
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="電競旅館五人房.png" class="w-full h-full object-cover" alt="五人電競特訓房">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
                         </div>
-                        <p class="text-slate-400 text-sm mb-6">完美複製職業電競隊伍訓練室。五機並排，體驗最高規格的團隊配合與賽後檢術討論空間。</p>
-                        <ul class="space-y-2 text-sm text-slate-300 mb-8">
-                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>標配 RTX 5090 電競電腦 x5</li>
-                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>五張高規格獨立舒適單人床</li>
-                            <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>附設戰術白板與賽事討論桌</li>
-                        </ul>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Full Team Room</span>
+                                    <h3 class="text-xl font-bold text-white mt-1">五人電競特訓房</h3>
+                                </div>
+                                <span class="bg-slate-800 text-slate-400 px-2 py-1 rounded text-xs">極致省錢首選</span>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-6">完美複製職業電競隊伍訓練室。五機並排，體驗最高規格的團隊配合與賽後檢術討論空間。</p>
+                            <ul class="space-y-2 text-sm text-slate-300 mb-4">
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>標配 RTX 5090 電競電腦 x5</li>
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>五張高規格獨立舒適單人床</li>
+                                <li><i class="fa-solid fa-check text-cyan-400 mr-2"></i>附設戰術白板與賽事討論桌</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="p-6 bg-slate-950 border-t border-slate-850 flex items-center justify-between">
                         <div>
@@ -238,12 +258,12 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between hover:border-amber-500/30 transition-all duration-300 group">
-                    <div class="flex flex-col gap-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-amber-500/20 to-red-500/20 rounded-xl flex items-center justify-center flex-shrink-0 text-amber-500">
-                            <i class="fa-solid fa-bowl-food text-xl"></i>
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-500/30 transition-all duration-300 group">
+                    <div>
+                        <div class="h-40 overflow-hidden">
+                            <img src="蔥燒牛肉麵.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="蔥燒牛肉麵">
                         </div>
-                        <div>
+                        <div class="p-5">
                             <div class="flex justify-between items-baseline mb-2">
                                 <h3 class="text-base font-bold text-white">皇室經典・蔥燒牛肉麵</h3>
                                 <span class="text-cyan-400 font-extrabold text-lg">$120</span>
@@ -251,17 +271,17 @@
                             <p class="text-slate-400 text-sm">網咖不敗傳奇！濃郁微辣的牛肉湯頭，軟Q麵條吸飽湯汁，深夜醒腦必備。</p>
                         </div>
                     </div>
-                    <div class="mt-4">
+                    <div class="p-5 pt-0">
                         <span class="inline-block bg-slate-800 text-amber-400 text-xs px-2 py-0.5 rounded font-medium">★ 主廚推薦加蛋加起司</span>
                     </div>
                 </div>
 
-                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between hover:border-amber-500/30 transition-all duration-300 group">
-                    <div class="flex flex-col gap-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-yellow-500/20 to-amber-600/20 rounded-xl flex items-center justify-center flex-shrink-0 text-yellow-500">
-                            <i class="fa-solid fa-mortar-pestle text-xl"></i>
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-500/30 transition-all duration-300 group">
+                    <div>
+                        <div class="h-40 overflow-hidden">
+                            <img src="肉骨茶麵.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="肉骨茶麵">
                         </div>
-                        <div>
+                        <div class="p-5">
                             <div class="flex justify-between items-baseline mb-2">
                                 <h3 class="text-base font-bold text-white">滋補醇香・肉骨茶麵</h3>
                                 <span class="text-cyan-400 font-extrabold text-lg">$110</span>
@@ -269,17 +289,17 @@
                             <p class="text-slate-400 text-sm">溫潤中藥與胡椒香氣完美交融，清爽不油膩，溫柔撫慰您激戰過後的疲憊身心。</p>
                         </div>
                     </div>
-                    <div class="mt-4">
+                    <div class="p-5 pt-0">
                         <span class="inline-block bg-slate-800 text-slate-400 text-xs px-2 py-0.5 rounded font-medium">湯頭清甜回甘</span>
                     </div>
                 </div>
 
-                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between hover:border-orange-500/30 transition-all duration-300 group">
-                    <div class="flex flex-col gap-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-xl flex items-center justify-center flex-shrink-0 text-orange-400">
-                            <i class="fa-solid fa-fire-burner text-xl"></i>
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-orange-500/30 transition-all duration-300 group">
+                    <div>
+                        <div class="h-40 overflow-hidden">
+                            <img src="炸物拼盤.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="炸物拼盤">
                         </div>
-                        <div>
+                        <div class="p-5">
                             <div class="flex justify-between items-baseline mb-2">
                                 <h3 class="text-base font-bold text-white">金黃大亂鬥・炸物拼盤</h3>
                                 <span class="text-cyan-400 font-extrabold text-lg">$150</span>
@@ -287,17 +307,17 @@
                             <p class="text-slate-400 text-sm">多口爽脆！內含美式脆薯、香酥雞塊與黃金洋蔥圈。絕對是揪團開排、與戰友共享的極致首選。</p>
                         </div>
                     </div>
-                    <div class="mt-4">
+                    <div class="p-5 pt-0">
                         <span class="inline-block bg-slate-800 text-orange-400 text-xs px-2 py-0.5 rounded font-medium">酥脆現炸・團隊共享</span>
                     </div>
                 </div>
 
-                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between hover:border-cyan-500/30 transition-all duration-300 group shadow-lg hover:shadow-cyan-500/5">
-                    <div class="flex flex-col gap-4">
-                        <div class="w-12 h-12 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0 text-cyan-400">
-                            <i class="fa-solid fa-glass-water-droplet text-xl"></i>
+                <div class="bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-cyan-500/30 transition-all duration-300 group shadow-lg hover:shadow-cyan-500/5">
+                    <div>
+                        <div class="h-40 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="電競能量特調飲料">
                         </div>
-                        <div>
+                        <div class="p-5">
                             <div class="flex justify-between items-baseline mb-2">
                                 <h3 class="text-base font-bold text-white">藍調微光・電競能量特調</h3>
                                 <span class="text-cyan-400 font-extrabold text-lg">$80</span>
@@ -305,7 +325,7 @@
                             <p class="text-slate-400 text-sm">極限續航！獨家研發氣泡能量飲，完美比例冰涼爽口，一秒補滿戰鬥專注力，伴你通宵連勝。</p>
                         </div>
                     </div>
-                    <div class="mt-4">
+                    <div class="p-5 pt-0">
                         <span class="inline-block bg-slate-800 text-cyan-400 text-xs px-2 py-0.5 rounded font-medium"><i class="fa-solid fa-ice-cream mr-1"></i> 冰度固定・無限暢快</span>
                     </div>
                 </div>
@@ -361,7 +381,7 @@
             <div class="space-y-4">
                 <div class="faq-item bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden transition-all duration-300">
                     <button class="faq-btn w-full px-6 py-5 text-left flex justify-between items-center text-white font-semibold hover:text-cyan-400 transition-colors focus:outline-none">
-                        <span><i class="fa-solid fa-shower mr-3 text-cyan-500"></i>有提供淋浴間和盥洗用品嗎？適合出差過夜嗎？</span>
+                        <span><i class="fa-solid fa-shower mr-3 text-cyan-500"></i>有提供淋浴間和盥洗用品嗎？官方適合出差過夜嗎？</span>
                         <i class="fa-solid fa-chevron-down text-slate-500 transition-transform duration-300 text-sm"></i>
                     </button>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-slate-950/40">
